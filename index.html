@@ -2,90 +2,111 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title> Biking Life!</title>
+        <title>Biking Life!</title>
         <link rel="stylesheet" href="./style.css">
-
     </head>
     <body>
-        <div class="hero">
-            <div class="header">
-                <img src="./images/logo1">
-                <div class="components">
-                    <a href="https://www.ktm.com/en-us/tech-guide.html" target="_blank"> features</a>
-                    <a href="https://www.youtube.com/watch?app=desktop&v=Lum2j0H2BMo" target="_blank">Bikers' experience</a>
-                    <a href="https://ktmkenya.com/service-%26-parts" target="_blank">servicing</a>
-                </div>
-                
-            </div>
-            <div class="hero-content">
-                <div class="content-info">
-                    <div class="text1"> Unleash the Freedom: Your 
-                    Next Adventure Awaits</div>
-                    <div class="text2"> Cruise through city traffic with the seamless 
-                    performance of a KTM bike. Whether it's daily commutes or 
-                    weekend getaways, this bike ensures a smooth and enjoyable 
-                    ride.
-                    <p>Adventure Ready! - From urban streets to off-the-beaten paths,
-                    KTM bikes are built for exploration. Unleash your adventurous
-                    spirit and discover new locations with confidence</p></div>
-                    <button>Own the Ride</button>
-                </div>
-                <img src="./images/placeholder2.jpg">
-                </div>
-                
-            </div>
-        </div>
 
-        <div class="content">
-            <div class="content-heading">Unlock the Ultimate Commuting & Adventure Experience with KTM</div>
+        <!-- Header and Navigation -->
+        <header class="hero">
+            <nav class="nav-bar">
+                <div class="logo">
+                    <img src="./images/logo-new" alt="Biking Life Logo">
+                </div>
+                <ul class="components">
+                    <li><a href="https://www.ktm.com/en-us/tech-guide.html" target="_blank">Features</a></li>
+                    <li><a href="https://www.youtube.com/watch?app=desktop&v=Lum2j0H2BMo" target="_blank">Bikers' Experience</a></li>
+                    <li><a href="https://ktmkenya.com/service-%26-parts" target="_blank">Servicing</a></li>
+                </ul>      
+            </nav>
+
+            <!-- Hero Section Content -->
+            
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="content-info">
+                        <h1 class="text1">Unleash the Freedom: <br> Next Adventure Awaits</h1>
+                        <p class="text2">Cruise through city traffic with the seamless 
+                        performance of a KTM bike. Whether it's daily commutes or 
+                        weekend getaways, this bike ensures a smooth and enjoyable 
+                        ride. Adventure Ready! - From urban streets to off-the-beaten paths,
+                        KTM bikes are built for exploration. Unleash your adventurous
+                        spirit and discover new locations with confidence.</p>
+                        <button>
+                            <a href="https://www.ktm.com/en-ca/models/travel/2024-ktm-390-adventuresw.html" target="_blank">Own the Ride</a>
+                        </button>
+                    </div>
+
+                </div>
+                <div class="hero-image">
+                    <img src="./images/placeholder2.jpg" alt="Adventure biking image">
+                </div>
+            </div>
+        </header>
+
+        <!-- Content Section -->
+        <section class="content">
+            <h2 class="content-heading">Unlock the Ultimate Commuting & Adventure Experience with KTM</h2>
+
             <div class="card-item">
                 <div class="card">
-                    <img src="./images/ktm1.jpeg">
-                    <div class="card">Smooth Navigation: Effortlessly weave through urban 
-                    traffic.
-                    <p>Efficient Performance: Get to work faster, every day.</p></div>
+                    <img src="./images/ktm1.jpeg" alt="KTM bike in urban environment">
+                    <div class="card-text">
+                        <p>Smooth Navigation: Effortlessly weave through urban traffic.<br>
+                        Efficient Performance: Get to work faster, every day.</p>
+                    </div>
                 </div>
                 <div class="card">
-                    <img src="./images/ktm2.jpg">
-                    <div class="card-text">390cc Engine: Experience unmatched power and efficiency.
-                    <p>Reliability: Built for daily commutes and long journeys.</p></div>
+                    <img src="./images/ktm2.jpg" alt="KTM 390cc Engine">
+                    <div class="card-text">
+                        <p>390cc Engine: Experience unmatched power and efficiency.<br>
+                        Reliability: Built for daily commutes and long journeys.</div></p>
+                    
                 </div>
                 <div class="card">
-                    <img src="./images/ktm3.webp">
-                    <div class="card-text">Explore More: Perfect for weekend getaways.
-                    <p>All-Terrain Performance: Conquer any path, any day.</p></div>
+                    <img src="./images/ktm3.webp" alt="KTM bike off-road">
+                    <div class="card-text">
+                        <p>Explore More: Perfect for weekend getaways. <br>
+                        All-Terrain Performance: Conquer any path, any day.</p>
+                    </div>
                 </div>
                 <div class="card">
-                    <img src="./images/ktm4.jpg">
-                    <div class="card-text">Ergonomic Design: Enjoy longer rides without discomfort.
-                    <p>Striking Aesthetics: Make a statement wherever you go.</p></div>
+                    <img src="./images/ktm4.jpg" alt="KTM bike ergonomic design">
+                    <div class="card-text">
+                        <p>Ergonomic Design: Enjoy longer rides without discomfort. <br>
+                        Striking Aesthetics: Make a statement wherever you go.</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
+        <!-- Testimonial Section -->
         <section id="quote" class="quote-section">
-                <div class="testimonial">A Rider's Story</div>
-                <blockquote>
-                    "Riding my KTM 390 Adventure from Kenya to South Africa, 
-                    I discovered the true meaning of freedom and resilience. 
-                    <p>The bike's robust performance and versatility made every 
-                    mile an adventure,</p> <p>it's the perfect companion for 
-                    both daily commutes and epic journeys."</p>
+            <h2 class="testimonial">A Rider's Story</h2>
+            <blockquote>
+                "Riding my KTM 390 Adventure from Kenya to South Africa, 
+                I discovered the true meaning of freedom and resilience. 
+                <p>The bike's robust performance and versatility made every 
+                mile an adventure, it's the perfect companion for 
+                both daily commutes and epic journeys."</p>
                 <p><cite> ~ John Nasio. <a href="https://nation.africa/kenya/life-and-style/lifestyle/john-nasio-my-5-000km-bike-ride-to-south-africa-and-lessons-i-picked-4200396" target="_blank">source</a></cite></p>
-                </blockquote>
-            </section>
-            
-        </div>
+            </blockquote>
+        </section>
 
-        <div class="call">
+        <!-- Call to Action Section -->
+        <section class="call">
             <div class="call-one">
-                <div class="call-heading"> Why own a KTM?</div>
-                <div class="call-text"> Experience unparalleled performance and reliability with every 
+                <h2 class="call-heading">Why own a KTM?</h2>
+                <p class="call-text">Experience unparalleled performance and reliability with every 
                 ride. Discover the perfect balance of power and efficiency designed 
-                for both city commutes and adventurous trails.</div>
+                for both city commutes and adventurous trails.</p>
             </div>
-            <button> <a href="https://www.ktm.com/en-ca/models/travel/2024-ktm-390-adventuresw.html" target="_blank">Join the KTM Community </a></button> 
-        </div>
-        <div class="footer"> All photo credits are  &reg; <a href="https://www.ktm.com/en-ca/models/travel/2024-ktm-390-adventuresw.html" target="_blank"> KTM official page</a></div>
+            <button><a href="https://www.ktm.com/en-ca/models/travel/2024-ktm-390-adventuresw.html" target="_blank">Join the KTM Community</a></button> 
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>All photo credits are &copy; <a href="https://www.ktm.com/en-ca/models/travel/2024-ktm-390-adventuresw.html" target="_blank">KTM official page</a></p>
+        </footer>
     </body>
 </html>
