@@ -68,25 +68,28 @@ body {
 
  @container (max-width: 600px) {
     .hero-content {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        margin: 5% 0;
     }
     .content-info {
         width: 100%;
         text-align: center;
     }
     .text1 {
-        font-size: 32px;
+        font-size: 24px;
     }
     .text2 {
-        font-size: 16px;
+        font-size: 14px;
     }
     .hero-image {
         width: 100%;
+        height: auto;
     }
     .hero-image img {   /*how will ensure that this image reduces ot take a better size well even in max-width=600px?*/
-        width: 100%;
+        /* width: 100%; */
         height: auto;
+        flex-shrink: 1;
     }
  }
 
@@ -95,6 +98,7 @@ body {
         .hero-content {
             flex-direction: row;
             align-items: center;
+            margin: 5% 0;
         }
         .content-info {
             width: 50%;
@@ -108,22 +112,23 @@ body {
         }
         .hero-image {
             width: 50%;
+            height: auto;
         }
         .hero-image img {   /*how will ensure that this image reduces ot take a better size well even in max-width=600px?*/
-            width: 110%;
-            height: 100%;
-            object-fit: cover;
-            position: absolute;
-            top: 0;
-            left: -5%;
+            width: 100%;
+            height: auto;
+            /* object-fit: cover; */
+            /* position: absolute; */
+            /* top: 0; */
+            /* left: -5%; */
         }
  }
 
  @container (min-width: 1025px) {
     .hero-content {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        width: 100%;
+        /* width: 100%; */
 
     }
     .content-info {
@@ -138,19 +143,19 @@ body {
     }
     .hero-image {
     width:50%;
-    height: 100%;
+    height: auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    border: 1px solid red;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* position: relative; */
+    /* border: 1px solid red; */
     }
     .hero-image img {   /*how will ensure that this image reduces ot take a better size well even in max-width=600px?*/
-        width: 110%;
-        height: 100%;
-        object-fit: cover;
-        position: absolute;
-        top: 0;
+        width: 100%;
+        height: auto;
+        /* object-fit: cover; */
+        /* position: absolute; */
+        /* top: 0; */
         /* left: -5%; */
     }
  }
@@ -171,8 +176,9 @@ body {
 }
 
 .hero-image {
-    width:100%;
+    width:50%;
     height: 100%;
+    /* flex-grow: 1; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -186,7 +192,7 @@ body {
     width: 100%; /* will increase images to overlap slightly*/
     height: 100%;
     object-fit: cover;
-    position: absolute;
+    position: absolute; 
     top: 0;
     
 }
@@ -214,12 +220,16 @@ body {
 }
 
 
-
 .content {
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    width: 100%;
+    height: auto;
+    border: 1px solid darkkhaki;
+    margin: 5% 0 5%;
+    container-type: inline;
 }
 
 .content-heading {
@@ -233,26 +243,57 @@ body {
 .card-item {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    border: 1px solid darkkhaki;
+    justify-content: center;
+    container-type: inline-size;
+    border: 2px solid red;
+    container-name: card-item;
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
     border: 2px solid #eee;
     box-shadow: 2px 4px 16px rgba(0,0,0,.06);
     border-radius: 4px;
     padding: 8px;
-    width: 300px;
-    gap: 32px;
+    flex: 1 1 23%;
+    margin: 5px;
+    /* width: 25%; */
+    /* gap: 32px; */
+}
+
+@container card-item (max-width: 725px) {
+    .card {
+        flex-direction:row;
+    }
+    .card-text {
+        align-items: center;
+        font-size: 14px;
+        color: #f9faf8; 
+    }
+    .card img {
+        width: 300px;
+        height: 300px;
+    }
 }
 
 .card-text {
     align-items: center;
     font-size: 18px;
     color: #f9faf8;
+    padding: 20px;
+    justify-content: space-between;
+
    
 }
-/* check media queries */
-.card-item P {
+
+.card-item li {
     color: #000;
+    margin-bottom: 5px;
 }
 
 .card img {
@@ -263,7 +304,7 @@ body {
 .quote-section {
     display: flex;
     flex-direction: column;
-    margin: 0;
+    margin: 20px 20px;
     padding: 10px;
     background-color: #e5e7eb;
     align-items: center;
@@ -271,6 +312,8 @@ body {
     border-left: 5px solid #ff5733;
     border-right: 5px solid #ff5733;
     margin-bottom: 10px;
+    container-type: inline-size;
+    container-name: quote;
 }
 
 .testimonial {
