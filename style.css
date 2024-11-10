@@ -316,7 +316,7 @@ body {
     container-name: quote;
     border: 1px solid darkkhaki;
     width: 100%;
-    margin-left: 16px;
+    margin: 10px 16px 10px 16px;
 
 }
 @container quote (max-width: 600px) {
@@ -392,22 +392,31 @@ body {
     text-decoration: underline;
 }
 
-.call {
+.call-container {
     border: 1px solid darkkhaki;
     display: flex;
-    flex-direction:row;
-    justify-content: space-between;
+    width: 100%;
+    justify-content: center;
+    margin: 10px 16px 10px 16px;
+    padding: 10px;  
+}
+
+.call-items {
+    display: flex;
     align-items: center;
-    padding: 8px;
-    margin-left: 150px;
-    margin-right: 80px;
-    width: 70%;
+    width: 80%;
     background-color: #4b3323;
-    
+    gap: 45px;
 }
 
 .call-one {
     margin: 16px;
+    width: 70%;
+    border:1px solid darkkhaki;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
 
 }
 
@@ -415,31 +424,35 @@ body {
     font-size: 18px;
     font-weight: bold;
     color: #f9faf8;
-
 }
 
 .call-text {
     font-size: 18px;
     color: #e5e7eb;
-    margin-top: 8px;
+    /* margin: 10px; */
+    
+}
+.call-two {
+    border: 1px solid darkkhaki;
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    margin: 10px ;
 }
 
-.call button {
+.call-two button {
     font-family: Roboto, sans-serif;
-  border: none;
-  border-radius: 8px;
-  background: #eee;
-  width: 300px;
-  padding: 8px;
-  
+    /* border: none; */
+    /* border-radius: 8px; */
+    background: #eee; 
 }
- .call button a {
+ .call-two button a {
     color: #ff5733;
   font-weight: 600;
 
  }
 
- .call button a:hover {
+ .call-two button a:hover {
     text-decoration: underline;
  }
 
