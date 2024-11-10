@@ -230,6 +230,7 @@ body {
     border: 1px solid darkkhaki;
     margin: 5% 0 5%;
     container-type: inline;
+    margin-left: 16px;
 }
 
 .content-heading {
@@ -245,6 +246,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
+    /* margin-left: 16px; */
     height: auto;
     border: 1px solid darkkhaki;
     justify-content: center;
@@ -304,45 +306,89 @@ body {
 .quote-section {
     display: flex;
     flex-direction: column;
-    margin: 20px 20px;
-    padding: 10px;
+    /* margin: 20px 20px; */
     background-color: #e5e7eb;
-    align-items: center;
     font-style: italic;
-    border-left: 5px solid #ff5733;
-    border-right: 5px solid #ff5733;
-    margin-bottom: 10px;
+    align-items: center;
+    /* border-left: 5px solid #ff5733;
+    border-right: 5px solid #ff5733; */
     container-type: inline-size;
     container-name: quote;
-}
+    border: 1px solid darkkhaki;
+    width: 100%;
+    margin-left: 16px;
 
+}
+@container quote (max-width: 600px) {
+    .quote-section .quote-text{
+        width: 100%;
+        font-size: 20px; 
+    }
+}
+@container (600px < width < 1080px) {
+    .quote-section .quote-text{
+        width: 100%;
+        font-size: 22px;
+    }
+}
 .testimonial {
+    width: 80%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
     font-size: 28px;
     color: #1f2937;
-    font-weight: 600;
-    padding: 26px;
+    font-weight: 600; 
+    border: 1px solid darkkhaki;
+    text-align: center; 
 }
 
 .quote-section blockquote {
-    font-size: 18px;
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
     color: #1f2937;
-    padding: 0;
-    margin: 0;
+    border: 1px solid darkkhaki;
+    padding: 5px;
+    margin: 0 5% 0;
+}
+.quote-text {
+    font-size: 24px;
+    display: flex;
+    width: 70%;
+    border: 1px solid darkkhaki;
+
+}
+.citation {
+    display: flex;
+    align-items: center;
+    border: 1px solid darkkhaki;
+    margin-left: 35%;
+    gap: 0;
+    width:100px;
+    padding: 3px;  /*this will help avoid overlapping*/
+    
 }
 
-.quote-section cite {
-    margin-top: 10px;
-    color: #1b2738;
-    align-self: flex-end;
-    margin-left: 650px;
+.citation cite {
+    display: inline;                  /*I've added this so that the name and superscript will be on same line*/
+    /* margin-right: 4px; */
+    color: #1b2738; 
+    white-space: nowrap;               /*noticed that this is working with the margin-right to ensure that name and superscript align*/
 }
 
-.quote-section cite a {
+.citation a {
+    display: inline;
     text-decoration: none;
     color: #ff5733;
+    
+}
+.citation a sup {
+    display: inline;
 }
 
-.quote-section cite a:hover {
+.citation a:hover {
     text-decoration: underline;
 }
 
