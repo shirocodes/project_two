@@ -11,11 +11,9 @@ body {
 }
 
 .hero {
-    border: 1px solid darkkhaki;
     display: flex;
     flex-direction: column;
-    margin: 0;
-    padding:0 45px;
+    width: 100%;
     background-color: #353a41;
 
 }
@@ -60,7 +58,6 @@ body {
 
  .hero-container {
     width: 100%;
-    border: 1px solid darkkhaki;
     display: flex;
     /* flex-direction: column; */
     background-color: #353a41;
@@ -73,7 +70,7 @@ body {
         margin: 5% 0;
     }
     .content-info {
-        width: 100%;
+        width: 50%;
         text-align: center;
     }
     .text1 {
@@ -83,13 +80,12 @@ body {
         font-size: 14px;
     }
     .hero-image {
-        width: 100%;
+        width: 50%;
         height: auto;
     }
     .hero-image img {   /*how will ensure that this image reduces ot take a better size well even in max-width=600px?*/
         /* width: 100%; */
         height: auto;
-        flex-shrink: 1;
     }
  }
 
@@ -171,7 +167,8 @@ body {
 
 .content-info {
     width: 50%;
-    border: 1px solid green;
+    padding: 10px;
+    margin-left: 10px;
 
 }
 
@@ -183,9 +180,7 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    border: 1px solid red;
-    
-    
+    margin-right: 10px; 
 }
 
 .hero-image img {
@@ -251,7 +246,6 @@ body {
     border: 1px solid darkkhaki;
     justify-content: center;
     container-type: inline-size;
-    border: 2px solid red;
     container-name: card-item;
 }
 
@@ -314,7 +308,6 @@ body {
     border-right: 5px solid #ff5733; */
     container-type: inline-size;
     container-name: quote;
-    border: 1px solid darkkhaki;
     width: 100%;
     margin: 10px 16px 10px 16px;
 
@@ -339,7 +332,6 @@ body {
     font-size: 28px;
     color: #1f2937;
     font-weight: 600; 
-    border: 1px solid darkkhaki;
     text-align: center; 
 }
 
@@ -357,13 +349,11 @@ body {
     font-size: 24px;
     display: flex;
     width: 70%;
-    border: 1px solid darkkhaki;
 
 }
 .citation {
     display: flex;
     align-items: center;
-    border: 1px solid darkkhaki;
     margin-left: 35%;
     gap: 0;
     width:100px;
@@ -393,12 +383,12 @@ body {
 }
 
 .call-container {
-    border: 1px solid darkkhaki;
+    
     display: flex;
     width: 100%;
     justify-content: center;
     margin: 10px 16px 10px 16px;
-    padding: 10px;  
+    /* padding: 10px;   */
 }
 
 .call-items {
@@ -412,7 +402,6 @@ body {
 .call-one {
     margin: 16px;
     width: 70%;
-    border:1px solid darkkhaki;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -433,7 +422,6 @@ body {
     
 }
 .call-two {
-    border: 1px solid darkkhaki;
     display: flex;
     justify-content: center;
     width: 30%;
@@ -442,8 +430,6 @@ body {
 
 .call-two button {
     font-family: Roboto, sans-serif;
-    /* border: none; */
-    /* border-radius: 8px; */
     background: #eee; 
 }
  .call-two button a {
@@ -457,20 +443,26 @@ body {
  }
 
 .footer {
-    background-color: #1f2937;
-    margin: 0;
-    padding: 10px;
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 28px;
+    margin: 0 16px 0 16px;
+    background-color: #1f2937;
 
 }
 
-.footer a{
+.copyrights {
+    display: inline;
+    width: 50%;
+    font-size: 18px;
+}
+
+.copyrights a{
     color: #ff5733;
+    display: inline;
 }
 
-.footer a:hover {
+.copyrights a:hover {
     text-decoration: underline;
 }
